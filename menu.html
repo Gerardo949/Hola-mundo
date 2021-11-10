@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+                background-color: rgb(149, 199, 245);
+			}
+			
+			#header {
+				margin:auto;
+				width:300px;
+				font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
+            }
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:rgb(149, 199, 245);
+				color:#0a0035;
+				text-decoration:none;
+				padding:15px 12px;
+				display:block;
+				transition: all 430ms ease;
+			}
+			
+			.nav li a:hover {
+				background-color:#396de7;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+			.boton {
+			background-color: #98b4f3;
+			color:rgb(3, 3, 3);
+			width: 150px;
+			height: 30;
+			border-radius: 2%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="header">
+			<ul class="nav">
+                <br>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Configuracion</a>
+					<ul>
+						<li><a href="">Rol</a>
+							<ul>
+								<li><a href="rol.html">Nuevo rol</a></li>
+								<li><a href="mostrar-rol.php">Consulta de roles</a></li>
+							</ul>
+						</li>
+                        <li><a href="">Usuario</a>
+							<ul>
+                                <li><a href="usuario.html">Registro de usuario</a></li>
+								<li><a href="mostrar-usuario.php">Consulta de usuario</a></li>
+								<li><a href="eliminar-usuario.html">Eliminar usuario</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Catalago</a>
+					<ul>
+						
+                        <li><a href="">Alumno</a>
+							<ul>
+                                <li><a href="alumno.html">Registro de alumno</a></li>
+								<li><a href="mostrar-alumno.php">Consulta de general</a></li>
+								<li><a href="eliminar-usuario.html">Eliminar alumno</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+	<br> <br> <br>
+	
+</html>
